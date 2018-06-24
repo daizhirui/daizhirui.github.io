@@ -11,7 +11,7 @@ To download a file, we should do these things:
 
 **Swift Version: 4.2**
 
-```Swift
+```swift
 import Cocoa
 
 class SwiftDownloader: NSObject {
