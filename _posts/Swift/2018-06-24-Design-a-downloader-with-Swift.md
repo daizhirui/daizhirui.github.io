@@ -5,6 +5,8 @@ date:   2018-06-24 18:38:58 +0200
 categories: Swift
 ---
 
+[Swift Category](category.md)
+
 To download a file, we should do these things:
 
 - Check if a file with the same name exits in the destination.
