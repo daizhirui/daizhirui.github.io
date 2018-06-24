@@ -12,7 +12,7 @@ Because of the popularity of iOS, as a language used for iOS App development, `S
 
 Here are my notes about `Swift`.
 
-- [Designed a downloader with Swift](_posts/Swift/2018-06-24-Design-a-downloader-with-Swift.md)
+- [Design a downloader with Swift](_posts/Swift/2018-06-24-Design-a-downloader-with-Swift.md)
 
 ## Camel Microelectronic
 
