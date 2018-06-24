@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 description: "Astro's notebook"
-baseurl: "https://daizhirui.github.io"
+url: "https://daizhirui.github.io"
 highlighter: rouge
 show_downloads: false
 github:
