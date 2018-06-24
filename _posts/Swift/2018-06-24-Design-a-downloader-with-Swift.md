@@ -7,8 +7,6 @@ categories: Swift
 
 # Design a downloader with Swift
 
-[Return to main page](../README.md)
-
 To download a file, we should do these things:
 
 - Check if a file with the same name exits in the destination.
@@ -179,7 +177,3 @@ downloader.downloadAsync(origin: origin!, destination: destination, replace: fal
 
 RunLoop.main.run()
 ```
-
-[Return to main page](../README.md)
-
-
