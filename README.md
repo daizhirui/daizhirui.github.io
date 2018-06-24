@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# Welcome to read my notebook!
 
-You can use the [editor on GitHub](https://github.com/daizhirui/daizhirui.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Swift
 
-### Markdown
+`Swift` is a programming language designed by `Apple Inc.`. It is a type-safe language.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Because of the popularity of iOS, as a language used for iOS App development, `Swift` is getting more and more popular.
 
-```markdown
-Syntax highlighted code block
+Here are my notes about `Swift`.
 
-# Header 1
-## Header 2
-### Header 3
+- [Designed a downloader with Swift](Swift/Downloader.md)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Camel Microelectronic
 
-**Bold** and _Italic_ and `Code` text
+### CamelStudioX
 
-[Link](url) and ![Image](src)
-```
+`CamelStudioX` is an IDE for Camel Microelectronic's products. We can create a project, write C language code, compile the code to an image and then upload it to a chip designed by Camel Microelectronic. What's more, we can use an integrated serial tool to run the program we upload to the chip.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Now, I develop a `macOS` version CamelStudioX in `Swift`. You can visit the [repository](https://github.com/daizhirui/CamelStudioX_Mac) of this software to learn something about macOS Application programming.
 
-### Jekyll Themes
+You can also download this macOS version [here](https://github.com/daizhirui/CamelStudioX_Mac/releases/latest).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/daizhirui/daizhirui.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### CamelStudioX Library
 
-### Support or Contact
+This library is designed for M2, a MIPS embedded system. Except some modules designed specially for M2, there are also some useful softwares that can be transplant to other platforms, e.g. DES(Data Encryption Standard).
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Click [here](https://github.com/daizhirui/CamelStudio_Library) to visit this library.
+
+Click [here](https://daizhirui.github.io/CamelStudio_Library/) to read the documentation of this library.
