@@ -14,12 +14,10 @@
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ { {{ site.url }}{{ page.url }}} | default: site.github.project_tagline }}</h2>
-      <h2 class="project-tagline">Date: {{ page.date }}</h2>
+      <h2 class="project-tagline">{{ page.url | default: site.github.project_tagline }}</h2>
       <a href="{{ site.url }}" class="btn">Home Page</a>
-      <a href="{{ site.url }}/{{ page.categories }}/category.html" class="btn">Category: {{ page.categories }}</a>
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}/{{ path.path }}" class="btn">View on GitHub</a>
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
