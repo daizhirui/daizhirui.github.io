@@ -1,9 +1,8 @@
 ----
-layout:default
+layout:home
 ----
 
-# Welcome to read my notebook!
-
+# Welcome to read my notebook
 
 ## Swift
 
