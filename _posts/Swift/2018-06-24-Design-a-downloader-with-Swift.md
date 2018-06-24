@@ -1,11 +1,12 @@
 ---
 layout: default
 title:  "Design a downloader with Swift"
+author: Zhirui Dai
 date:   2018-06-24 18:38:58 +0200
 categories: Swift
 ---
 
-[Swift Category](category.md)
+[Swift Category](./category.md)
 
 To download a file, we should do these things:
 
