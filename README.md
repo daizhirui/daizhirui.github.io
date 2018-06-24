@@ -1,3 +1,8 @@
+----
+layout:default
+permalink: /
+----
+
 # Welcome to read my notebook!
 
 
@@ -29,3 +34,5 @@ This library is designed for M2, a MIPS embedded system. Except some modules des
 Click [here](https://github.com/daizhirui/CamelStudio_Library) to visit this library.
 
 Click [here](https://daizhirui.github.io/CamelStudio_Library/) to read the documentation of this library.
+
+

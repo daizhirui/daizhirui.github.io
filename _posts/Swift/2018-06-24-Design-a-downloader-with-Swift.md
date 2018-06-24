@@ -1,12 +1,13 @@
-----
+---
 layout: default
-----
+title:  "Design a downloader with Swift"
+date:   2018-06-24 18:38:58 +0200
+categories: Swift
+---
 
-# Designed a downloader with Swift
+# Design a downloader with Swift
 
 [Return to main page](../README.md)
-
-[TOC]
 
 To download a file, we should do these things:
 
@@ -180,3 +181,5 @@ RunLoop.main.run()
 ```
 
 [Return to main page](../README.md)
+
+
