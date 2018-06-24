@@ -4,12 +4,17 @@ title: Welcome to read my notebook!
 date: 2018-06-24
 ---
 
+<style type="text/css">
+    tab1 { margin-left: 4em; }
+</style>
+
 # All articles
 
 <ul>
-    {% for post in {{ site.posts | sort: 'date' }} %}
+    {% for post in site.posts %}
     <li>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}  --{{ post.date }}</a>
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        <div align="right"><small><strong> - - - - {{ post.date | date: "%B %e, %Y" }}, {{ post.categories }}</strong></small></div>
     </li>
     {% endfor %}
 </ul>

@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+
+<style type="text/css">
+    pagebtntab { margin-left: 15em; }
+    .page-btn { display: inline-block; margin-bottom: 1rem; color: rgba(100, 100, 100, 0.7); background-color: rgba(250, 250, 250, 0.08); border-color: rgba(200, 200, 200, 0.2); border-style: solid; border-width: 1px; border-radius: 0.2rem; transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+    .page-btn:hover { color: rgba(30, 150, 250, 0.8); text-decoration: none; background-color: rgba(250, 250, 250, 0.2); border-color: rgba(100, 100, 100, 0.3); }
+    .page-btn + .page-btn { margin-left: 1rem; }
+</style>
+
   <head>
     <meta charset="UTF-8">
 
@@ -27,11 +35,22 @@
       {% endif %}
     </header>
 
+    <br>
+    <div align="center">
+        <a href="{{ page.previous.url }}" class="page-btn" >Previous: {{ page.previous.title }}</a>
+        <pagebtntab><a href="{{ page.next.url }}" class="page-btn" >Next: {{ page.next.title }}</a></pagebtntab>
+    </div>
+
     <main id="content" class="main-content" role="main">
         {% include toc.html html=content %}
         {{ content }}
 
-      <footer class="site-footer">
+    <footer class="site-footer">
+        <br>
+        <div align="center">
+            <a href="{{ page.previous.url }}" class="page-btn" >Previous: {{ page.previous.title }}</a>
+            <pagebtntab><a href="{{ page.next.url }}" class="page-btn" >Next: {{ page.next.title }}</a></pagebtntab>
+        </div>
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}

@@ -13,6 +13,7 @@ Here are my notes about `Swift`.
     {% for post in site.categories.Swift %}
     <li>
         <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        <div align="right"><small><strong> - - - - {{ post.date | date: "%B %e, %Y" }}, {{ post.categories }}</strong></small></div>
     </li>
     {% endfor %}
 </ul>
