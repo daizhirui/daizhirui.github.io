@@ -1,3 +1,7 @@
+----
+layout: toc.html
+----
+
 # Designed a downloader with Swift
 
 [Return to main page](../README.md)
@@ -176,3 +180,5 @@ RunLoop.main.run()
 ```
 
 [Return to main page](../README.md)
+
+
