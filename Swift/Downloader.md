@@ -138,7 +138,7 @@ It is very simple to use SwiftDownloader to download a file.
 
 Here is an example:
 
-```Swift
+```swift
 import Foundation
 
 let downloader = SwiftDownloader()
