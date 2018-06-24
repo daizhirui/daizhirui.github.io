@@ -4,15 +4,17 @@ title: Welcome to read my notebook!
 date: 2018-06-24
 ---
 
-## Swift
+# All articles
 
-`Swift` is a programming language designed by `Apple Inc.`. It is a type-safe language.
+<ul>
+    {% for post in {{ site.posts | sort: 'date' }} %}
+    <li>
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}  --{{ post.date }}</a>
+    </li>
+    {% endfor %}
+</ul>
 
-Because of the popularity of iOS, as a language used for iOS App development, `Swift` is getting more and more popular.
-
-Here are my notes about `Swift`.
-
-- [Design a downloader with Swift](_posts/Swift/2018-06-24-Design-a-downloader-with-Swift.md)
+# My Projects
 
 ## Camel Microelectronic
 
