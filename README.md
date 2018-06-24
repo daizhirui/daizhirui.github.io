@@ -1,6 +1,5 @@
 ----
 layout:default
-permalink: /
 ----
 
 # Welcome to read my notebook!
@@ -14,7 +13,7 @@ Because of the popularity of iOS, as a language used for iOS App development, `S
 
 Here are my notes about `Swift`.
 
-- [Designed a downloader with Swift](Swift/Downloader.md)
+- [Designed a downloader with Swift](_posts/Swift/2018-06-24-Design-a-downloader-with-Swift.md)
 
 
 ## Camel Microelectronic
@@ -34,5 +33,3 @@ This library is designed for M2, a MIPS embedded system. Except some modules des
 Click [here](https://github.com/daizhirui/CamelStudio_Library) to visit this library.
 
 Click [here](https://daizhirui.github.io/CamelStudio_Library/) to read the documentation of this library.
-
-
