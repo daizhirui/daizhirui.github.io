@@ -1,0 +1,115 @@
+I"�<h2 id="deep-learning">Deep Learning</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/2020/11/22/bevnet.html">BEV-Net</a>: a multi-task network that detects area where people are violating the social distancing. Geometric reasoning is used.</td>
+      <td><img src="/assets/images/bevnet/teaser.png" width="1500" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/ucsd-snowy.html">Making UC San Diego Snowy Again</a>: a cycleGAN with attention mechanism to transform a picture of UCSD into another one in snow.</td>
+      <td><img src="/assets/images/ucsd-in-snow/output.png" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="robot-manipulation">Robot Manipulation</h2>
+
+<p>To manipulate a robot, the basic elements are the description of the robot’s configuration space which represents the reachable positions and the controller logic which satisfies specific demands. Here are some demos of robot manipulation.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Trajectory with Given Fixed Points</td>
+      <td><img src="/assets/images/robot-manipulation/trajectory.gif" width="800" /></td>
+    </tr>
+    <tr>
+      <td>Plus Obstacles</td>
+      <td><img src="/assets/images/robot-manipulation/path-planning.gif" width="800" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="path-planning">Path Planning</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/2020/11/22/collision-path-planning.html">Collision Detection and Path Planning</a>: Performance comparision and improvement of algorithms for path planning with collision detection.</td>
+      <td><img src="/assets/images/path-planning/room-astar.png" width="800" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/fnpp.html">Faster Neural Path Planner Based on MPNet</a>: a fast neural path planer</td>
+      <td><img src="/assets/images/path-planning/fnpp.png" width="800" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="slam">SLAM</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/2020/11/22/particle-slam.html">Performance Improvement for Particle Filter SLAM</a>: employs some methods to improve the performance of particle filter SLAM</td>
+      <td><img src="/assets/images/slam/train4.gif" width="800" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/ekf-slam.html">Visual-inertial SLAM with Extended Kalman Filter</a>: implemented SLAM with extended Kalman filter and compared it with particle filter SLAM</td>
+      <td><img src="/assets/images/slam/0027_slam.gif" width="800" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="reinforcement-learning">Reinforcement Learning</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/2020/11/22/openai-gym.html">Algorithm Investigation with OpenAI Gym</a>: implemented and compared different reinforcement learning algorithms: SARSA, Q-Learning, DQN</td>
+      <td><img src="/assets/images/openai-gym/lander-ql.gif" alt="" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="soc-software-development">SoC Software Development</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/2020/11/21/camelstudiox.html">CamelStudio X</a>: an IDE designed for embedded system software development on macOS. Although it is challenging, I developed this software out of enthusiasm.</td>
+      <td><img src="/assets/images/camelstudiox/welcome.png" width="800" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/camellibrary.html">CamelLibrary</a>: a library for speeding up the development of SoC software</td>
+      <td><img src="/assets/images/camellibrary/M2e-diagram.png" width="800" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/elf-converter.html">ELF Converter</a>: a software for analyzing ELF files and generating SoC firmwares</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="system-design-and-implementation">System Design and Implementation</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/2019/06/15/ultrasonic-flow.html">Ultrasonic Blood Flow Field Measuring System</a>: a prototype system for measuring the flow field of blood.</td>
+      <td><img src="/assets/images/ultrasonic-bloodflow/design.png" width="800" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/3dof-scanning-system.html">3-DOF Scanning Platform</a>: a 3-DOF system for multiple functionalities.</td>
+      <td><img src="/assets/images/3-dof-scanning/design.jpg" width="800" /></td>
+    </tr>
+    <tr>
+      <td>Self-balancing on a Pivot: Inspired by the classical inverted pendulum and the single-plank bridge, I designed and built a robot that can keep balanced on a pivot by itself with PID controller. Using this system, I studied the PID controller.</td>
+      <td><img src="/assets/images/self-balancing/design.png" width="800" /></td>
+    </tr>
+    <tr>
+      <td><a href="/2020/11/22/hot-fountain.html">Mechanical System For Studying Pipette Hot Fountain</a>: when I was a freshman, I designed this mechanical system controlled by an Arduino Uno board to study the phenomenon of pipetee hot fountain.</td>
+      <td><img src="/assets/images/hot-fountain/hotfountain.gif" width="800" /></td>
+    </tr>
+  </tbody>
+</table>
+:ET

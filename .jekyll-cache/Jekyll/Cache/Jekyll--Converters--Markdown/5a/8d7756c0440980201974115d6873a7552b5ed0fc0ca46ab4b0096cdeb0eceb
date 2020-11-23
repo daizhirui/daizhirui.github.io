@@ -1,0 +1,21 @@
+I"•<h1 id="performance-improvement-for-particle-filter-slam">Performance Improvement for Particle Filter SLAM</h1>
+
+<p>In practice, it is sometimes difficult to well-model the motion and the observation because of some unpredictable disturbances. Particle filter is a sampling method to approximate these two models. However, the number of particles is a critical factor that influences the speed and the accuracy of particle filter SLAM. In this project, with the dataset generated with the THOR robot, I implemented the particle filter SLAM and improved its performance. Some modifications are proposed. <a href="/assets/pdfs/particle_filter_slam.pdf">Link</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Scene 0</th>
+      <th style="text-align: center">Scene 1</th>
+      <th style="text-align: center">Scene 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="/assets/images/slam/train0.gif" /></td>
+      <td style="text-align: center"><img src="/assets/images/slam/train2.gif" /></td>
+      <td style="text-align: center"><img src="/assets/images/slam/train4.gif" /></td>
+    </tr>
+  </tbody>
+</table>
+:ET

@@ -1,0 +1,8 @@
+I"é<h1 id="faster-neural-path-planner-based-on-mpnet">Faster Neural Path Planner Based on MPNet</h1>
+
+<p>In this project, I proposed and implemented a faster neural path planner (FNPP) based on MPNet (Motion Planning Network). Unlike traditional methods like RRT, FNPP samples the possible feasible configuration by inferencing from the encoded obstacle vector of the obstacles in the space. Based on MPNet, FNPP proposes a modified path scheduling algorithm to reach significant performance improvement on both successful and failed cases. <a href="/assets/pdfs/fnpp-mpnet.pdf">Link</a></p>
+
+<p><img src="/assets/images/path-planning/fnpp.png" width="800" /></p>
+
+<p><img src="/assets/images/path-planning/fnpp-performance.png" width="800" /></p>
+:ET

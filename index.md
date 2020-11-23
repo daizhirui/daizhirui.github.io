@@ -1,40 +1,12 @@
 ---
-layout: home
-title: Welcome to read my notebook!
+layout: article
+title: Welcome to explore!
 date: 2018-06-24
+show_date: false
 ---
 
-<style type="text/css">
-    tab1 { margin-left: 4em; }
-</style>
+Hi!
 
-# All articles
+I am a graduate student from UC San Diego Electrical and Computer Engineering Department. I am currently working in [SVCL Lab](http://www.svcl.ucsd.edu/) under the supervision of Prof. Nuno Vasconcelos. My research interest is broad and multidisplinary. Currently, I focus on deep learning and computer vision. My research aims to build a privacy-presevered system to detect public area where people are violating the social distancing to help fight against the COVID-19 pandemic. Before this, I also explored other research topics like path planning. Yeap! I am a fan of intelligent systems like robots!
 
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        <div align="right"><small><strong> - - - - {{ post.date | date: "%B %e, %Y" }}, {{ post.categories }}</strong></small></div>
-    </li>
-    {% endfor %}
-</ul>
-
-# My Projects
-
-## Camel Microelectronic
-
-### CamelStudioX
-
-`CamelStudioX` is an IDE for Camel Microelectronic's products. We can create a project, write C language code, compile the code to an image and then upload it to a chip designed by Camel Microelectronic. What's more, we can use an integrated serial tool to run the program we upload to the chip.
-
-Now, I develop a `macOS` version CamelStudioX in `Swift`. You can visit the [repository](https://github.com/daizhirui/CamelStudioX_Mac) of this software to learn something about macOS Application programming.
-
-You can also download this macOS version [here](https://github.com/daizhirui/CamelStudioX_Mac/releases/latest).
-
-### CamelStudioX Library
-
-This library is designed for M2, a MIPS embedded system. Except some modules designed specially for M2, there are also some useful softwares that can be transplant to other platforms, e.g. DES(Data Encryption Standard).
-
-Click [here](https://github.com/daizhirui/CamelStudio_Library) to visit this library.
-
-Click [here](https://daizhirui.github.io/CamelStudio_Library/) to read the documentation of this library.
+Prior to my studies at UC San Diego, I earned my B.S. degree in the Physics Department of Fudan University. During my undergraduate, I did research mainly in two areas, design and implementation of systems for physics and SoC (System-on-Chip) software development. I like to share ideas and experiences with others. Please feel free to explore this website and reach out to me if you like to discuss with me.
