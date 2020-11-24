@@ -1,8 +1,0 @@
-I"7<h1 id="camellibrary">CamelLibrary</h1>
-
-<p>In order to bring down the threshold of embeded system programming for beginners, CamelLibrary is developed as a hardware abstract layer for programmers to manipulate resources of the embedded system such as UART, SPI, GPIO, ADC, etc. <a href="https://github.com/daizhirui/CamelLibrary">Link to the project repo</a></p>
-
-<p>Click <a href="https://daizhirui.github.io/CamelStudio_Library/">here</a> to read the documentation of this library.</p>
-
-<p><img src="/assets/images/camellibrary/M2e-diagram.png" width="800" /></p>
-:ET
