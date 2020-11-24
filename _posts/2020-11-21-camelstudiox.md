@@ -6,7 +6,7 @@ show_date: false
 
 # CamelStudio X
 
-CamelStudio X is an IDE designed for developing software running on SoC designed by Camel Microelectronics Inc. 
+CamelStudio X is an IDE designed for developing software running on SoC designed by Camel Microelectronics Inc. This software and its related tools are adpoted for commercial usage now.
 
 <img src="/assets/images/camelstudiox/welcome.png" width=800px aligned="center">
 
