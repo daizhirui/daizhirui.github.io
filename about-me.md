@@ -22,6 +22,7 @@ permalink: /about/
 
 ## My Hobbies, My Tastes
 
+- Painting
 - Sports: Badminton, Table Tennis, Work Out
 - Cooking
 - Science Fictions
