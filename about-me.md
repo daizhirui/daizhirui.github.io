@@ -1,12 +1,13 @@
 ---
 layout: article
 title: You Got Me!
+date: 2024-02-18
 permalink: /about/
 ---
 
 ## Contact
 
-- email: zhdai at eng.ucsd.edu
+- email: zhdai at ucsd.edu
 
 ## My Skills
 
