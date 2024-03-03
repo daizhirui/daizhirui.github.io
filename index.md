@@ -19,7 +19,7 @@ Prior to my studies at UC San Diego, I received my B.S. degree in the [Physics D
 
 - **Optimal Scene Graph Planning with Large Language Model Guidance** \\
   Zhirui Dai, Arash Asgharivaskasi, Thai Duong, Shusen Lin, Maria-Elizabeth Tzes, George Pappas, Nikolay Atanasov \\
-  IEEE International Conference on Robotics and Automation (ICRA), 2024 [[Link]](https://arxiv.org/abs/2309.09182) [[Project Page]](https://daizhirui.github.io/llm-scene-graph-ltl-project-page/)
+  IEEE International Conference on Robotics and Automation (ICRA), 2024 [[Link]](https://arxiv.org/abs/2309.09182) [[Project Page]](https://existentialrobotics.org/pages/llm-planning.html)
 
 - **BEV-Net: Assessing Social Distancing Compliance by Joint People Localization and Geometric Reasoning** \\
   Zhirui Dai, Yuepeng Jiang, Yi Li, Bo Liu, Antoni B. Chan, Nuno Vasconcelos \\
