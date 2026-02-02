@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="robotics, machine learning, reinforcement learning, artificial intelligence, computer vision, information gathering, active information acquisition, planning and control for mobile sensors, sensor management, active slam, simultaneous localization and mapping, value iteration, policy iteration, active perception, object recognition, active object classification and pose estimation, active semantic localization, mobile robot localization, particle filter, KITTI dataset, unmanned aerial vehicles" />
+    <title>Zhirui Dai</title>
+    <!-- <link rel="icon" href="/img/ucsd.png" type="image/x-icon" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .noshow {
+            display: none;
+        }
+
+        .bibtex {
+            white-space: pre-wrap;
+            margin-top: 0.25rem;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        .bibtex pre {
+            font-size: 80%;
+            overflow: auto;
+            width: 100%;
+            max-height: 15rem;
+        }
+    </style>
+
+    <!-- MathJax 3 for LaTeX support -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-end gap-6 text-lg font-semibold">
+            <a href="/" class="text-slate-600 hover:text-blue-600">Home</a>
+            <a href="/pages/research.html" class="text-slate-600 hover:text-blue-600">Research</a>
+            <a href="/pages/publications.html" class="text-slate-600 hover:text-blue-600">Publications</a>
+            <a href="/pages/news.html" class="text-slate-600 hover:text-blue-600">News</a>
+        </nav>
+
+        <!-- <nav class="border-t border-slate-200">
+            <div class="max-w-6xl mx-auto px-6 py-3 flex justify-end gap-6 text-sm font-medium">
+                <a href="#journals" class="text-slate-600 hover:text-blue-600 whitespace-nowrap">Journal Papers</a>
+                <a href="#conferences" class="text-slate-600 hover:text-blue-600 whitespace-nowrap">Conference
+                    Papers</a>
+                <a href="#dissertation" class="text-slate-600 hover:text-blue-600 whitespace-nowrap">PhD
+                    Dissertation</a>
+                <a href="#workshops" class="text-slate-600 hover:text-blue-600 whitespace-nowrap">Workshop Papers</a>
+            </div>
+        </nav> -->
+    </header>
+
+    <!-- Page layout -->
+    <main class="mx-auto max-w-6xl px-6 py-12 [&_a]:text-blue-800 [&_a:hover]:text-gray-500">
+        <div class="flex flex-col md:flex-row gap-12">
+
+            <!-- Sidebar -->
+            <aside class="md:w-72 shrink-0 space-y-4 text-center text-lg">
+                <img src="/assets/images/selfie.jpg" alt="Zhirui Dai" class="mx-auto w-60 rounded shadow">
+
+                <p class="text-2xl font-bold tracking-tight">Zhirui Dai</p>
+                <div class="leading-snug">
+                    <p>Ph.D. Candidate</p>
+                    <p>
+                        <a href="https://existentialrobotics.org/">ERL</a> &middot;
+                        <a href="https://www.ece.ucsd.edu/">ECE</a> &middot;
+                        <a href="https://cri.ucsd.edu/">CRI</a> &middot;
+                        <a href="https://ucsd.edu/">UCSD</a>
+                    </p>
+                </div>
+
+                <div class="border-t border-slate-200 pt-4">
+                    <table class="mx-auto text-left">
+                        <tr>
+                            <th class="text-right font-medium pr-2">Email</th>
+                            <td>zhdai@ucsd.edu</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Links -->
+                <div class="border-t border-slate-200 pt-4 space-y-2">
+                    <a href="https://scholar.google.com/citations?user=Qss2fs8AAAAJ" class="block">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/zhirui-dai-465489194/" class="block">LinkedIn</a>
+                    <a href="https://github.com/daizhirui" class="block">GitHub</a>
+                    <a href="/assets/pdfs/cv/cv.pdf" class="block">Curriculum Vitae</a>
+                </div>
+            </aside>
+
+
+            <!-- Main -->
+            <div class="flex-1 space-y-10">
+
+                <section id="publications" class="space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tight">Publications</h2>
+                    <ol class="list-decimal space-y-2" reversed>
+
+                        <li>
+                            <strong>Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy
+                                Learning</strong><br />
+                            S. Kim, W. Chung, Y. Tian, <strong>Z. Dai</strong>, A. Shukla, H. Su and N. Atanasov<br />
+                            <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2026.<br />
+                            [<a href="javascript:toggleBibtex('Kim_BiggerPicture_ICRA26')">bib</a>]
+                            [<a href="/assets/pdfs/ref/BiggerPicture_ICRA26.pdf">pdf</a>]
+                            [<a href="https://arxiv.org/abs/2510.03885">arXiv</a>]
+                            [<a href="https://existentialrobotics.org/sbp_page">project</a>]
+                        </li>
+                        <div id="bib_Kim_BiggerPicture_ICRA26" class="bibtex noshow">
+                            <pre>
+    @inproceedings{Kim_BiggerPicture_ICRA26,
+        author = {Sunghwan Kim and Woojeh Chung and Yulun Tian and Zhirui Dai and Arth Shukla and Hao Su and Nikolay Atanasov},
+        title = {{Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning}},
+        booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+        year = {2026},
+        url = {https://arxiv.org/abs/2510.03885}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>$\nabla$-SDF: Learning Euclidean Signed Distance Functions Online with
+                                Gradient-Augmented Octree Interpolation and Neural Residual</strong><br />
+                            <strong>Z. Dai</strong>, Q. Qian, T. Fan, N. Atanasov<br />
+                            <em>IEEE International Conference on Intelligent Robots and Systems (IROS), <u>Under
+                                    Review</u></em>, 2026.<br />
+                            [<a href="javascript:toggleBibtex('Dai_GradSDF_UR26')">bib</a>]
+                            [<a href="/assets/pdfs/ref/GradSDF_UR26.pdf">pdf</a>]
+                            [<a href="https://arxiv.org/abs/2510.1899">arXiv</a>]
+                            [<a href="https://existentialrobotics.org/grad-sdf/">project</a>]
+                        </li>
+                        <div id="bib_Dai_GradSDF_UR26" class="bibtex noshow">
+                            <pre>
+    @misc{Dai_GradSDF_UR26,
+        author = {Zhirui Dai and Qihao Qian and Tianxing Fan and Nikolay Atanasov},
+        title = {{$\nabla$-SDF: Learning Euclidean Signed Distance Functions Online with Gradient-Augmented Octree Interpolation and Neural Residual}},
+        year = {2026},
+        url = {https://arxiv.org/abs/2510.1899}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Real-Time Learning of Signed Distance Function via Kernel Regression with
+                                Uncertainty Quantification</strong><br />
+                            <strong>Z. Dai</strong>, T. Fan, M. Amani, J. Seo, K. M. B. Lee, H. Oh and N. Atanasov<br />
+                            <em>IEEE Robotics and Automation Letters (RA-L), <u>Under Review</u></em>, 2026.<br />
+                            [<a href="javascript:toggleBibtex('Dai_KernelSDF_UR26')">bib</a>]
+                            [<a href="/assets/pdfs/ref/Kernel_SDF.pdf">pdf</a>]
+                            [<a href="https://existentialrobotics.org/erl_gp_sdf">project</a>]
+                        </li>
+                        <div id="bib_Dai_KernelSDF_UR26" class="bibtex noshow">
+                            <pre>
+    @misc{Dai_KernelSDF_UR26,
+        author = {Zhirui Dai and Tianxing Fan and Mani Amani and Jaemin Seo and Kyungmin B. Lee and Hyondong Oh and Nikolay Atanasov},
+        title = {{Real-Time Learning of Signed Distance Function via Kernel Regression with Uncertainty Quantification}},
+        year = {2026}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Learning Scene-Level Signed Directional Distance Function with Ellipsoidal Priors
+                                and Neural Residuals</strong><br />
+                            <strong>Z. Dai</strong>, H. Shin, Y. Tian, K. M. B. Lee and N. Atanasov<br />
+                            <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), <u>Minor
+                                    Revision</u></em>, 2026.<br />
+                            [<a href="javascript:toggleBibtex('Dai_SDDF_TPAMI26')">bib</a>]
+                            [<a href="/assets/pdfs/ref/SDDF_TPAMI26.pdf">pdf</a>]
+                            [<a href="https://arxiv.org/abs/2503.20066">arXiv</a>]
+                            [<a href="https://existentialrobotics.org/neural_sddf/index-tpami">project</a>]
+                        </li>
+                        <div id="bib_Dai_SDDF_TPAMI26" class="bibtex noshow">
+                            <pre>
+    @misc{Dai_SDDF_TPAMI26,
+        author = {Zhirui Dai and Hojoon Shin and Yulun Tian and Ki Myung Brian Lee and Nikolay Atanasov},
+        title = {{Learning Scene-Level Signed Directional Distance Function with Ellipsoidal Priors and Neural Residuals}},
+        year = {2026},
+        url = {https://arxiv.org/abs/2503.20066}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Learning Scene-Level Signed Directional Distance Function for Aerial
+                                Autonomy</strong><br />
+                            <strong>Z. Dai</strong>, H. Shin, Y. Tian, K. M. B. Lee and N. Atanasov<br />
+                            <em>Workshop on Leveraging Implicit Methods for Aerial Autonomy at RSS</em>, 2025.<br />
+                            <a href="https://im4rob.github.io/"><strong>[Best Paper Award]</strong></a><br />
+                            [<a href="javascript:toggleBibtex('Dai_SDDF_RSS25')">bib</a>]
+                            [<a href="/assets/pdfs/ref/SDDF_RSS25.pdf">pdf</a>]
+                            [<a href="https://existentialrobotics.org/neural_sddf/">project</a>]
+                        </li>
+                        <div id="bib_Dai_SDDF_RSS25" class="bibtex noshow">
+                            <pre>
+    @inproceedings{Dai_SDDF_RSS25,
+        author = {Dai, Zhirui and Shin, Hojoon and Tian, Yulun and Lee, Ki Myung Brian and Atanasov, Nikolay},
+        title = {{Learning Scene-Level Signed Directional Distance Function for Aerial Autonomy}},
+        booktitle = {Workshop on Leveraging Implicit Methods for Aerial Autonomy at RSS},
+        year = {2025}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy
+                                Learning</strong><br />
+                            S. Kim, W. Chung, Y. Tian, <strong>Z. Dai</strong>, A. Shukla, H. Su and N. Atanasov<br />
+                            <em>Workshop on Mobile Manipulation and Workshop on Learned Robot Representations at
+                                RSS</em>, 2025.<br />
+                            <strong>[Best Paper Nomination]</strong><br />
+                            [<a href="javascript:toggleBibtex('Kim_BiggerPicture_RSS25')">bib</a>]
+                            [<a href="/assets/pdfs/ref/BiggerPicture_RSS25.pdf">pdf</a>]
+                            [<a href="https://existentialrobotics.org/sbp_page">project</a>]
+                        </li>
+                        <div id="bib_Kim_BiggerPicture_RSS25" class="bibtex noshow">
+                            <pre>
+    @inproceedings{Kim_BiggerPicture_RSS25,
+        author = {Sunghwan Kim and Woojeh Chung and Yulun Tian and Zhirui Dai and Arth Shukla and Hao Su and Nikolay Atanasov},
+        title = {{Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning}},
+        booktitle = {Workshop on Mobile Manipulation and Workshop on Learned Robot Representations at RSS},
+        year = {2025}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>LTLCodeGen: Code Generation of Syntactically Correct Temporal Logic for Robot Task
+                                Planning</strong><br />
+                            B. Rabiei, M. Kumar A. R., <strong>Z. Dai</strong>, S. L. S. R. Pilla, Q. Dong and N.
+                            Atanasov<br />
+                            <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, pp.
+                            19240-19247,
+                            2025.<br />
+                            [<a href="javascript:toggleBibtex('Rabiei_LTLCodeGen_IROS25')">bib</a>]
+                            [<a href="../ref/Rabiei_LTLCodeGen_IROS25.pdf">pdf</a>]
+                            [<a href="https://doi.org/10.1109/IROS60139.2025.11246351">doi</a>]
+                            [<a href="https://arxiv.org/abs/2503.07902">arXiv</a>]
+                            [<a href="https://existentialrobotics.org/LTLCodeGen/">project</a>]
+                        </li>
+                        <div id="bib_Rabiei_LTLCodeGen_IROS25" class="bibtex noshow">
+                            <pre>
+    @inproceedings{Rabiei_LTLCodeGen_IROS25,
+        author = {Rabiei, Behrad and Kumar A. R., Mahesh and Dai, Zhirui and Pilla, Surya Lakshmi Subba Rao and Dong, Qiyue and Atanasov, Nikolay},
+        title = {{LTLCodeGen: Code Generation of Syntactically Correct Temporal Logic for Robot Task Planning}},
+        booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+        year = {2025},
+        pages = {19240-19247},
+        url = {https://arxiv.org/abs/2503.07902},
+        doi = {https://doi.org/10.1109/IROS60139.2025.11246351}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Optimal Scene Graph Planning with Large Language Model Guidance</strong><br />
+                            <strong>Z. Dai</strong>, A. Asgharivaskasi, T. Duong, S. Lin, M.-E. Tzes, G. J. Pappas and
+                            N. Atanasov<br />
+                            <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, pp. 14062-14069,
+                            2024.<br />
+                            [<a href="javascript:toggleBibtex('Dai_LLMPlanning_ICRA24')">bib</a>]
+                            [<a href="../ref/Dai_LLMPlanning_ICRA24.pdf">pdf</a>]
+                            [<a href="https://doi.org/10.1109/ICRA57147.2024.10610599">doi</a>]
+                            [<a href="https://arxiv.org/abs/2309.09182">arXiv</a>]
+                            [<a href="https://existentialrobotics.org/LLM-Scene-Graph-LTL-Planning/">project</a>]
+                        </li>
+                        <div id="bib_Dai_LLMPlanning_ICRA24" class="bibtex noshow">
+                            <pre>
+    @inproceedings{Dai_LLMPlanning_ICRA24,
+        author = {Zhirui Dai and Arash Asgharivaskasi and Thai Duong and Shusen Lin and Maria-Elizabeth Tzes and George J. Pappas and Nikolay Atanasov},
+        title = {{Optimal Scene Graph Planning with Large Language Model Guidance}},
+        booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
+        year = {2024},
+        pages = {14062-14069},
+        url = {https://arxiv.org/abs/2309.09182},
+        doi = {https://doi.org/10.1109/ICRA57147.2024.10610599}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Sensor-Based Distributionally Robust Control for Safe Robot Navigation in Dynamic
+                                Environments</strong><br />
+                            K. Long, Y. Yi, <strong>Z. Dai</strong>, S. Herbert, J. Cort&eacute;s and N. Atanasov<br />
+                            <em>The International Journal of Robotics Research (IJRR)</em>, 2025.<br />
+                            [<a href="javascript:toggleBibtex('Long_DROSafeNavigation_IJRR25')">bib</a>]
+                            [<a href="/assets/pdfs/ref/Long_DROSafeNavigation_IJRR25.pdf">pdf</a>]
+                            [<a href="https://doi.org/10.1177/02783649251352000">doi</a>]
+                            [<a href="https://arxiv.org/abs/2405.18251">arXiv</a>]
+                            [<a href="https://existentialrobotics.org/DRO_Safe_Navigation/">project</a>]
+                        </li>
+                        <div id="bib_Long_DROSafeNavigation_IJRR25" class="bibtex noshow">
+                            <pre>
+    @article{Long_DROSafeNavigation_IJRR25,
+        author = {Kehan Long and Yinzhuang Yi and Zhirui Dai and Sylvia Herbert and Jorge Cort&eacute;s and Nikolay Atanasov},
+        title = {{Sensor-Based Distributionally Robust Control for Safe Robot Navigation in Dynamic Environments}},
+        journal = {The International Journal of Robotics Research (IJRR)},
+        year = {2025},
+        url = {https://arxiv.org/abs/2405.18251},
+        doi = {https://doi.org/10.1177/02783649251352000}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>Safe Bubble Cover for Motion Planning on Distance Fields</strong><br />
+                            K. M. B. Lee, <strong>Z. Dai</strong>, C. L. Gentil, L. Wu, N. Atanasov, T.
+                            Vidal-Calleja<br />
+                            <em>arXiv preprint arXiv:2408.13377</em>, 2024.<br />
+                            [<a href="javascript:toggleBibtex('Lee_SafeBubble_arXiv')">bib</a>]
+                            [<a href="/assets/pdfs/ref/SafeBubble.pdf">pdf</a>]
+                            [<a href="https://arxiv.org/abs/2408.13377">arXiv</a>]
+                        </li>
+                        <div id="bib_Lee_SafeBubble_arXiv" class="bibtex noshow">
+                            <pre>
+    @misc{Lee_SafeBubble_arXiv,
+        author = {Ki Myung Brian Lee and Zhirui Dai and Cedric Le Gentil and Lan Wu and Nikolay Atanasov and Teresa Vidal-Calleja},
+        title = {{Safe Bubble Cover for Motion Planning on Distance Fields}},
+        year = {2024},
+        url = {https://arxiv.org/abs/2408.13377}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>BEV-Net: Accessing Social Distancing Compliance By Joint People Localization and
+                                Geometric Reasoning</strong><br />
+                            <strong>Z. Dai</strong>, Y. Jiang, Y. Li, B. Liu, A. B. Chan, N. Vasconcelos<br />
+                            <em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2021.<br />
+                            [<a href="javascript:toggleBibtex('Dai_BEVNet_ICCV21')">bib</a>]
+                            [<a href="/assets/pdfs/ref/BEVNet_ICCV21.pdf">pdf</a>]
+                            [<a href="/assets/pdfs/ref/BEVNet_ICCV21_supp.pdf">supp</a>]
+                            [<a href="https://doi.org/10.1109/ICCV48922.2021.00535">doi</a>]
+                            [<a href="https://arxiv.org/abs/2110.04931">arXiv</a>]
+                        </li>
+                        <div id="bib_Dai_BEVNet_ICCV21" class="bibtex noshow">
+                            <pre>
+    @InProceedings{Dai_2021_ICCV,
+        author = {Dai, Zhirui and Jiang, Yuepeng and Li, Yi and Liu, Bo and Chan, Antoni B. and Vasconcelos, Nuno},
+        title = {BEV-Net: Assessing Social Distancing Compliance by Joint People Localization and Geometric Reasoning},
+        booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+        month = {October},
+        year = {2021},
+        pages = {5401-5411},
+        doi = {10.1109/ICCV48922.2021.00535},
+        url = {https://arxiv.org/abs/2110.04931}
+    }
+                    </ol>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-6xl px-6 py-6 text-sm text-slate-500">
+            © 2026 Zhirui Dai. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script type="text/javascript">
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            const bib = document.getElementById('bib_' + articleid);
+            if (bib) bib.classList.toggle('noshow');
+        }
+    </script>
+</body>
+
+</html>

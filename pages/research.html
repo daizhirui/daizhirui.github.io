@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="robotics, machine learning, reinforcement learning, artificial intelligence, computer vision, information gathering, active information acquisition, planning and control for mobile sensors, sensor management, active slam, simultaneous localization and mapping, value iteration, policy iteration, active perception, object recognition, active object classification and pose estimation, active semantic localization, mobile robot localization, particle filter, KITTI dataset, unmanned aerial vehicles" />
+    <title>Zhirui Dai</title>
+    <link rel="icon" href="/img/ucsd.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .noshow {
+            display: none;
+        }
+
+        .bibtex {
+            white-space: pre-wrap;
+            margin-top: 0.25rem;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+        }
+
+        .bibtex pre {
+            font-size: 80%;
+            overflow: auto;
+            width: 100%;
+            max-height: 15rem;
+        }
+    </style>
+
+    <!-- MathJax 3 for LaTeX support -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-end gap-6 text-lg font-semibold">
+            <a href="/" class="text-slate-600 hover:text-blue-600">Home</a>
+            <a href="/pages/research.html" class="text-slate-600 hover:text-blue-600">Research</a>
+            <a href="/pages/publications.html" class="text-slate-600 hover:text-blue-600">Publications</a>
+            <a href="/pages/news.html" class="text-slate-600 hover:text-blue-600">News</a>
+        </nav>
+    </header>
+
+
+    <!-- Page layout -->
+    <main class="mx-auto max-w-6xl px-6 py-12 [&_a]:text-blue-800 [&_a:hover]:text-gray-500">
+        <div class="flex flex-col md:flex-row gap-12">
+
+            <!-- Sidebar -->
+            <!-- <aside class="md:w-72 shrink-0 space-y-4 text-center text-lg">
+                <img src="/assets/images/selfie.jpg" alt="Zhirui Dai" class="mx-auto w-60 rounded shadow">
+
+                <p class="text-2xl font-bold tracking-tight">Zhirui Dai</p>
+                <div class="leading-snug">
+                    <p>Ph.D. Candidate</p>
+                    <p>
+                        <a href="https://existentialrobotics.org/">Existential Robotics Lab (ERL)</a> &middot;
+                        <a href="https://www.ece.ucsd.edu/">ECE</a> &middot;
+                        <a href="https://cri.ucsd.edu/">CRI</a> &middot;
+                        <a href="https://ucsd.edu/">UCSD</a>
+                    </p>
+                </div>
+
+                <div class="border-t border-slate-200 pt-4">
+                    <table class="mx-auto text-left">
+                        <tr>
+                            <th class="text-right font-medium pr-2">Email</th>
+                            <td>zhdai@ucsd.edu</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="border-t border-slate-200 pt-4 space-y-2">
+                    <a href="https://scholar.google.com/citations?user=Qss2fs8AAAAJ" class="block">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/zhirui-dai-465489194/" class="block">LinkedIn</a>
+                    <a href="https://github.com/daizhirui" class="block">GitHub</a>
+                    <a href="/assets/pdfs/cv/cv.pdf" class="block">Curriculum Vitae</a>
+                </div>
+            </aside> -->
+
+            <!-- Main -->
+            <div class="flex-1 space-y-10 text-lg">
+
+                <section id="research" class="space-y-4">
+                    <h2 class="text-3xl font-bold tracking-tight">Research</h2>
+                    <p class="leading-relaxed" style="text-align: justify;">
+                        I am passionate about enabling autonomous robots to safely navigate and interact in complex
+                        environments. My research focuses on 3D scene representation learning, vision-language models
+                        for robotics, and robot task planning with large language models. I leverage CUDA, C++, Python
+                        etc. to develop algorithms that allow robots to perceive, reason, and act in the real world.
+                    </p>
+                </section>
+
+                <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <!-- ICRA 2026 -->
+                    <a href="https://existentialrobotics.org/sbp_page/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <img src="/assets/images/research/SBP_ICRA2026.png" alt="3D Latent Mapping"
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">Seeing the Bigger Picture: 3D Latent Mapping for
+                                    Mobile Manipulation Policy Learning</h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    We develop Seeing the Bigger Picture (SBP), an end-to-end policy learning approach
+                                    that operates directly on a 3D map of latent features. In SBP, the map extends
+                                    perception beyond the robot's current field of view and aggregates observations over
+                                    long horizons, which achieves stronger spatial and temporal reasoning than policies
+                                    relying solely on images.
+                                </p>
+                            </div>
+                            <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                <p>ICRA 2026</p>
+                                <p>Best Paper Nomination @ RoboReps Workshop RSS 2025</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- IROS 2025 -->
+                    <a href="https://existentialrobotics.org/LTLCodeGen/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <video class="h-full w-full object-cover" autoplay="" muted="" loop="" playsinline=""
+                                    poster="/assets/images/research/LTLCodeGen_IROS25.png">
+                                    <source src="/assets/videos/LTLCodeGen_IROS25.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">LTLCodeGen: Code Generation of Syntactically Correct
+                                    Temporal Logic for
+                                    Robot Task Planning</h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    We develop LTLCodeGen, a method that uses large language model (LLM) code generation
+                                    to translate natural language robot navigation instructions into syntactically
+                                    correct linear temporal logic (LTL) formulas that can be combined with a semantic
+                                    occupancy map to generate robot trajectories satisfying the specified tasks.
+                                </p>
+                            </div>
+                            <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                IROS 2025
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- ICRA 2024 -->
+                    <a href="https://existentialrobotics.org/LLM-Scene-Graph-LTL-Planning/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <div class="h-64 bg-slate-100 overflow-hidden">
+                                    <img src="/assets/images/research/LLM-Scene-Graph-LTL-Planning_ICRA24.png"
+                                        alt="LLM-Scene-Graph-LTL-Planning" class="h-full w-full object-cover">
+                                </div>
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">Optimal Scene Graph Planning with Large Language Model
+                                    Guidance
+                                </h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    Our work enables optimal hierarchical LTL planning with LLM guidance over scene
+                                    graphs. To achieve efficiency, we construct a hierarchical planning domain that
+                                    captures the attributes and connectivity of the scene graph and the task automaton,
+                                    and provide semantic guidance via an LLM heuristic function. To guarantee
+                                    optimality, we design an LTL heuristic function that is provably consistent and
+                                    supplements the potentially inadmissible LLM guidance in multi-heuristic
+                                    planning.
+                                </p>
+                            </div>
+                            <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                ICRA 2024
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- RSS 2025 -->
+                    <a href="https://existentialrobotics.org/neural_sddf/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <img src="/assets/images/research/SDDF_RSS25.gif" alt="SDDF"
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">Learning Scene-Level Signed Directional Distance
+                                    Function for Aerial Autonomy</h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    We propose Signed Directional Distance Function (SDDF), a novel 3D scene
+                                    representation that encodes the signed distance from a position to the nearest
+                                    surface along a direction. SDDF enhances geometry modeling, occlusion capture,
+                                    collision checking and differentiable view prediction for trajectory optimization of
+                                    aerial robots.
+                                </p>
+                            </div>
+                            <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                <p>Best Paper Award @ Workshop on Leveraging Implicit Methods for Aerial Autonomy at RSS
+                                    2025</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://existentialrobotics.org/neural_sddf/index-tpami.html" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <img src="/assets/images/research/SDDF_TPAMI.png" alt="SDDF"
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">Learning Scene-Level Signed Directional Distance
+                                    Function with Ellipsoidal Priors and Neural Residuals</h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    To learn and predict scene-level SDDF efficiently, we develop a differentiable
+                                    hybrid representation that combines explicit ellipsoid priors with implicit neural
+                                    residuals. This approach allows the model to effectively handle large
+                                    distance discontinuities around obstacle boundaries while preserving the ability for
+                                    dense, high-fidelity prediction.
+                                </p>
+                            </div>
+                            <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                <p>Best Paper Award @ Workshop on Leveraging Implicit Methods for Aerial Autonomy at RSS
+                                    2025</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://existentialrobotics.org/grad-sdf/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <img src="/assets/images/research/grad-sdf.gif" alt="GRAD-SDF"
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">$\nabla$-SDF: Learning Euclidean Signed Distance
+                                    Functions Online with Gradient-Augmented Octree Interpolation and Neural Residual
+                                </h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    We propose $\nabla$-SDF, a novel 3D scene representation that combines
+                                    gradient-augmented octree interpolation with a neural residual to learn accurate
+                                    signed distance functions online in real-time. $\nabla$-SDF outperforms the SOTA
+                                    neural SDF methods in SDF prediction accuracy.
+                                </p>
+                            </div>
+                            <!-- <div class="border-t px-5 py-3 text-xs text-slate-500">
+                            </div> -->
+                        </div>
+                    </a>
+
+                    <a href="https://existentialrobotics.org/erl_gp_sdf/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <img src="/assets/images/research/kernel-sdf.png" alt="Kernel-SDF"
+                                    class="h-full w-full object-cover">
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">Real-Time Learning of Signed Distance Function via
+                                    Kernel Regression with Uncertainty Quantification
+                                </h3>
+                                <p class="mt-2 text-sm text-slate-600" style="text-align: justify;">
+                                    We develop Kernel-SDF, an open-source library for real-time signed distance function
+                                    estimation using kernel regression. Kernel-SDF achieves superior accuracy compared
+                                    to existing methods and outstanding real-time performance, making it suitable for
+                                    various robotic applications requiring reliable environment representation with
+                                    uncertainty awareness.
+                                </p>
+                            </div>
+                            <!-- <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                                                    </div> -->
+                        </div>
+                    </a>
+
+                    <!-- IJRR 2025 -->
+                    <a href="https://existentialrobotics.org/DRO_Safe_Navigation/" class="group">
+                        <div
+                            class="h-full flex flex-col rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden">
+                            <div class="h-64 bg-slate-100 overflow-hidden">
+                                <video class="h-full w-full object-cover" autoplay="" muted="" loop="" playsinline=""
+                                    poster="/assets/images/research/DROSafeNavigation_IJRR25.png">
+                                    <source src="/assets/videos/DROSafeNavigation_IJRR25.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="flex-grow p-5">
+                                <h3 class="text-lg font-semibold">Distributionally Robust Control for Safe Robot
+                                    Navigation in Dynamic
+                                    Environments</h3>
+                                <p class="mt-2 text-sm text-slate-600">
+                                    We formulate distributionally robust control barrier functions (DR-CBFs) to
+                                    incorporate noisy sensor
+                                    measurements directly into optimization-based control synthesis, guaranteeing safe
+                                    and efficient
+                                    autonomous navigation in dynamic environments.
+                                </p>
+                            </div>
+                            <div class="border-t px-5 py-3 text-xs text-slate-500">
+                                IJRR 2025
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-6xl px-6 py-6 text-sm text-slate-500">
+            © 2026 Zhirui Dai. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

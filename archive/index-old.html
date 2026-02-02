@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1168479-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-1168479-8');
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+        }
+
+        p {
+            line-height: 25px;
+        }
+
+        main.container {
+            max-width: 1000px;
+            padding: 0 20px;
+        }
+
+        span.p-title {
+            font-size: 19px;
+        }
+
+        span.p-authors {
+            font-style: normal;
+        }
+
+        span.p-conference {
+            font-style: italic;
+        }
+
+        .p-bibtex {
+            font-size: 12px;
+            margin-bottom: 0px;
+            max-width: 650px;
+            text-align: left;
+        }
+
+        img.p-teaser {
+            width: 160px;
+        }
+
+        img.p-project {
+            width: 320px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+        }
+
+        span.project {
+            text-align: justify;
+        }
+
+        img.profile {
+            width: 160px;
+            height: 160px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            margin-bottom: 150px;
+            box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.5);
+        }
+
+        /* Lato font definitions */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 700;
+            src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* Custom styles for your content */
+        .nav-container {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            margin-bottom: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 30px;
+            font-size: 18px;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .header-text {
+            flex: 0 0 72%;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: auto;
+            margin-left: 5%;
+            border-radius: 50%;
+        }
+
+        .publication-item {
+            margin-bottom: 32px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .publication-media {
+            width: 160px;
+            height: 90px;
+            margin-right: 12px;
+            flex-shrink: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .publication-media video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .publication-text {
+            flex: 1;
+            line-height: 1.5em;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .btn-custom {
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            text-decoration: none;
+            margin-right: 5px;
+            display: inline-block;
+            color: white;
+        }
+
+        .btn-orange {
+            background-color: #f39c12;
+        }
+
+        .btn-red {
+            background-color: #e74c3c;
+        }
+
+        .btn-dark {
+            background-color: #34495e;
+        }
+
+        .btn-custom:hover {
+            opacity: 0.8;
+            color: white;
+            text-decoration: none;
+        }
+
+        #loadMore {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #loadMore:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            main.container {
+                padding: 0 15px;
+            }
+
+            .header-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header-text {
+                flex: none;
+                margin-bottom: 20px;
+            }
+
+            .profile-img {
+                margin-left: 0;
+            }
+
+            .publication-item {
+                flex-direction: column;
+            }
+
+            .publication-media {
+                width: 100%;
+                height: 200px;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .publication-media video {
+                height: 200px;
+            }
+
+            .publication-media[style*="position: relative"] {
+                height: 250px !important;
+                width: 100% !important;
+                margin-right: 0 !important;
+                margin-bottom: 10px;
+            }
+
+            .publication-media[style*="position: relative"] video {
+                height: 250px !important;
+                width: 50% !important;
+                position: absolute;
+                top: 0;
+                object-fit: cover;
+            }
+
+            .publication-media[style*="position: relative"] video:first-child {
+                left: 0;
+            }
+
+            .publication-media[style*="position: relative"] video:last-child {
+                right: 0;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links a {
+                margin: 5px 0;
+                font-size: 16px;
+            }
+        }
+    </style>
+
+    <title>Zhirui Dai</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="nav-links">
+            <a href="index.html">Zhirui Dai</a>
+            <a href="publication.html">Publications</a>
+            <a href="/assets/pdfs/cv.pdf" target="_blank">CV</a>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="mt-5 mb-5">
+            <div class="header-section">
+                <div class="header-text">
+                    <h2>Zhirui Dai</h2>
+                    <p align="justify">
+                        I am a Ph.D. student at the <a href="https://www.ece.ucsd.edu">Electrical and Computer
+                            Engineering Department</a> of <a href="https://www.ucsd.edu">UC San Diego</a>. I am a member
+                        of the <a href="https://erl.ucsd.edu">Existential Robotics Lab</a>, where I am advised by <a
+                            href="https://natanaso.github.io/">Prof. Nikolay Atanasov</a>.
+                    </p>
+                    <p align="justify">
+                        I did my Ph.D. in Mathematics at <a href="https://www.ucsd.edu/">University of California San
+                            Diego</a>, where I worked on robotics at <a
+                            href="https://contextualrobotics.ucsd.edu/">Contextual Robotics Institute</a> and was
+                        fortunate to be advised by <a href="https://natanaso.github.io/">Prof. Nikolay Atanasov</a>, <a
+                            href="http://terrano.ucsd.edu/jorge/">Prof. Jorge Cortés</a>, and <a
+                            href="https://mathweb.ucsd.edu/~mleok/">Prof. Melvin Leok</a>.
+                    </p>
+                    <p align="justify">
+                        My academic journey began at the <a href="https://illinois.edu/">University of
+                            Illinois,Urbana-Champaign</a>, where I obtained a B.S. degree in Applied Mathematics.
+                    </p>
+                    <p align="center">
+                        <a href="mailto:kehan.lkh@gmail.com">Email</a> &nbsp;/&nbsp;
+                        <a href="https://scholar.google.com/citations?user=mIUXyAkAAAAJ&hl=en">Google Scholar</a>
+                        &nbsp;/&nbsp;
+                        <a href="https://github.com/KehanLong">Github</a> &nbsp;/&nbsp;
+                        <a href="https://www.linkedin.com/in/kehan-long-046bbb148/">LinkedIn</a>
+                    </p>
+                </div>
+                <img src="assets/images/profile.jpg" alt="Kehan Long" class="profile-img" />
+            </div>
+        </div>
+
+        <h3 class="mb-3">Research Interests</h3>
+        <p align="justify">
+            My research lies at the intersection of <strong>robotics</strong>, artificial intelligence, and control
+            theory, with a focus on enabling <strong>certifiable and reliable robot autonomy</strong>.
+            I develop methods for robot control and learning, decision-making under uncertainty, and safe robot
+            autonomy, combining theoretical guarantees with practical applicability for real-world robotic systems.
+        </p>
+
+        <h3 class="mb-3 mt-5">News</h3>
+        <ul class="list-unstyled">
+            <div id="news">
+                <!-- <li style='margin-bottom: 10px'>[11/2025] Our paper on <a href="https://arxiv.org/abs/2503.04929">Neural Configuration-Space Barriers for Manipulation Planning and Control</a> has been accepted to IEEE TASE 2025.</li> -->
+                <li style='margin-bottom: 10px'>[09/2025] Our paper on <a
+                        href="https://arxiv.org/abs/2505.10947">Certifying Stability of Reinforcement Learning Policies
+                        using Generalized Lyapunov Functions</a> has been accepted to NeurIPS 2025.</li>
+                <li style='margin-bottom: 10px'>[09/2025] I successfully defended my PhD dissertation on "Certifiable
+                    Robot Control under Uncertainty: Towards Safety, Stability, and Robustness"!</li>
+                <li style='margin-bottom: 10px'>[07/2025] Our paper on <a href="https://arxiv.org/abs/2409.13865">Neural
+                        Configuration Distance Function for Continuum Robot Control</a> has been accepted to IROS 2025.
+                </li>
+                <li style='margin-bottom: 10px'>[05/2025] Our paper on <a
+                        href="https://arxiv.org/abs/2405.18251">Sensor-based Distributionally Robust Control for Safe
+                        Robot Navigation in Dynamic Environments</a> has been accepted to IJRR.</li>
+                <li style='margin-bottom: 10px'>[04/2025] I am honored to be selected as <a
+                        href="https://sites.google.com/view/rsspioneers2025/">RSS Pioneers 2025</a> for my work on <a
+                        href="https://openreview.net/pdf?id=ncTTEOBb6X">Certifiable Robot Autonomy under
+                        Uncertainty</a>!</li>
+                <li style='margin-bottom: 10px'>[08/2024] Our paper on <a
+                        href="https://arxiv.org/abs/2404.03017">Distributionally Robust Policy and Lyapunov-Certificate
+                        Learning</a> has been accepted to IEEE OJ-CSYS.</li>
+                <li style='margin-bottom: 10px'>[07/2024] Our paper on <a
+                        href="https://arxiv.org/pdf/2408.08398">Stabilization of Nonlinear Systems through Control
+                        Barrier Functions</a> has been accepted to CDC 2024.</li>
+                <li style='margin-bottom: 10px'>[01/2024] Our paper on <a href="https://arxiv.org/pdf/2310.00273">Safe
+                        Stabilizing Control for Polygonal Robots in Dynamic Elliptical Environments</a> has been
+                    accepted to ACC 2024.</li>
+                <li style='margin-bottom: 10px'>[12/2023] Our paper on <a
+                        href="https://arxiv.org/abs/2311.05813">Feasibility Analysis and Regularity Characterization of
+                        Distributionally Robust Safe Stabilizing Controllers</a> has been accepted to L-CSS.</li>
+                <li style='margin-bottom: 10px'>[03/2023] Our paper on <a
+                        href="https://arxiv.org/abs/2212.01554">Distributionally Robust Lyapunov Function Search Under
+                        Uncertainty</a> has been accepted to L4DC 2023.</li>
+                <li style='margin-bottom: 10px'>[01/2023] Our paper on <a href="https://arxiv.org/abs/2210.01341">Safe
+                        and Stable Control Synthesis for Uncertain System Models via Distributionally Robust
+                        Optimization</a> has been accepted to ACC 2023.</li>
+                <li style='margin-bottom: 10px'>[06/2022] Our paper on <a href="https://arxiv.org/abs/2202.09557">Safe
+                        Control Synthesis with Uncertain Dynamics and Constraints</a> has been accepted to RA-L with
+                    IROS 2022.</li>
+                <li style='margin-bottom: 10px'>[03/2021] Our paper on <a
+                        href="https://arxiv.org/abs/2011.01899">Learning Barrier Functions with Memory for Robust Safe
+                        Navigation</a> has been accepted to RA-L with ICRA 2021. 🎉🎉🎉</li>
+            </div>
+        </ul>
+        <button id="loadMore">Load More</button>
+
+        <h3 class="mb-3 mt-5" id="publications">Selected Publications</h3>
+        <ul class="list-unstyled">
+            <li class="publication-item">
+                <div class="publication-media" style="position: relative; width: 160px; height: 90px; margin-top: 4px;">
+                    <video autoplay loop muted playsinline
+                        style="position: absolute; left: 0; width: 50%; height: 100%; object-fit: cover;">
+                        <source src="assets/files/GLF_RL_certificate/pendulum.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video autoplay loop muted playsinline
+                        style="position: absolute; right: 0; width: 50%; height: 100%; object-fit: cover;">
+                        <source src="assets/files/GLF_RL_certificate/cartpole.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="publication-text">
+                    <span class="publication-title"><a href="https://arxiv.org/abs/2505.10947">Certifying Stability of
+                            Reinforcement Learning Policies using Generalized Lyapunov Functions</a></span><br />
+                    <span><strong>Kehan Long</strong>, Jorge Cortés, Nikolay Atanasov</span><br />
+                    <span class="p-conference">Advances in Neural Information Processing Systems (NeurIPS),
+                        2025</span><br />
+                    <a class="btn-custom btn-red" href="https://arxiv.org/abs/2505.10947">arXiv</a>
+                    <a class="btn-custom btn-dark" href="bibtex/long2025_glf_rl_certificate.txt">bibtex</a>
+                </div>
+            </li>
+
+            <li class="publication-item">
+                <div class="publication-media">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/files/CDF_barrier_manipulation/topshelf_2box.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="publication-text">
+                    <span class="publication-title"><a href="https://www.arxiv.org/abs/2503.04929">Neural
+                            Configuration-Space Barriers for Manipulation Planning and Control</a></span><br />
+                    <span><strong>Kehan Long</strong>, Ki Myung Brian Lee, Nikola Raicevic, Niyas Attasseri, Melvin
+                        Leok, Nikolay Atanasov</span><br />
+                    <span class="p-conference">arXiv Preprint, 2025</span><br />
+                    <a class="btn-custom btn-orange"
+                        href="https://existentialrobotics.org/bubble_cdf_safe_manipulation/">project page</a>
+                    <a class="btn-custom btn-red" href="https://www.arxiv.org/abs/2503.04929">arXiv</a>
+                    <a class="btn-custom btn-dark" href="https://github.com/KehanLong/cdf_bubble_control">code</a>
+                    <a class="btn-custom btn-dark" href="bibtex/long2025_cdf_planningcontrol.txt">bibtex</a>
+                </div>
+            </li>
+
+            <li class="publication-item">
+                <div class="publication-media"
+                    style="background-image: url(assets/images/continuum_robot_control/cluttered_link4.gif);"></div>
+                <div class="publication-text">
+                    <span class="publication-title"><a href="https://arxiv.org/abs/2409.13865">Neural Configuration
+                            Distance Function for Continuum Robot Control</a></span><br />
+                    <span><strong>Kehan Long</strong>, Hardik Parwana, Georgios Fainekos, Bardh Hoxha, Hideki Okamoto,
+                        Nikolay Atanasov</span><br />
+                    <span class="p-conference">IEEE/RSJ International Conference on Intelligent Robots and Systems
+                        (IROS), 2025</span><br />
+                    <a class="btn-custom btn-red" href="https://arxiv.org/abs/2409.13865">arXiv</a>
+                    <a class="btn-custom btn-dark" href="https://github.com/cps-atlas/ndf-coroco">code</a>
+                    <a class="btn-custom btn-dark" href="bibtex/long2025_continuum_robot_cedf.txt">bibtex</a>
+                </div>
+            </li>
+
+            <li class="publication-item">
+                <div class="publication-media">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/files/dr_safe_navigation/gazebo_dynamic_env.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="publication-text">
+                    <span class="publication-title"><a href="https://arxiv.org/abs/2405.18251">Sensor-Based
+                            Distributionally Robust Control for Safe Robot Navigation in Dynamic
+                            Environments</a></span><br />
+                    <span><strong>Kehan Long</strong>, Yinzhuang Yi, Zhirui Dai, Sylvia Herbert, Jorge Cortés, Nikolay
+                        Atanasov</span><br />
+                    <span class="p-conference">International Journal of Robotics Research (<a
+                            href="https://journals.sagepub.com/home/ijr">IJRR</a>), 2025</span><br />
+                    <a class="btn-custom btn-orange" href="https://existentialrobotics.org/DRO_Safe_Navigation/">project
+                        page</a>
+                    <a class="btn-custom btn-red" href="https://arxiv.org/abs/2405.18251">arXiv</a>
+                    <a class="btn-custom btn-dark"
+                        href="https://github.com/ExistentialRobotics/DR_Safe_Navigation">code</a>
+                    <a class="btn-custom btn-dark" href="bibtex/long2025_dro_cbf_navigation.txt">bibtex</a>
+                </div>
+            </li>
+
+            <!-- <li class="publication-item">
+          <div class="publication-media" style="background-image: url(assets/images/DR_Policy_Learning/inverted_pendulum.gif);"></div>
+          <div class="publication-text">
+            <span class="publication-title"><a href="https://arxiv.org/abs/2404.03017">Distributionally Robust Policy and Lyapunov-Certificate Learning</a></span><br/>
+            <span><strong>Kehan Long</strong>, Jorge Cortés, Nikolay Atanasov</span><br/>
+            <span class="p-conference">IEEE Open Journal of Control Systems (<a href="https://ojcsys.github.io/">OJ-CSYS</a>), 2024</span><br/>
+            <a class="btn-custom btn-red" href="https://arxiv.org/abs/2404.03017">arXiv</a>
+            <a class="btn-custom btn-dark" href="https://github.com/KehanLong/DR_Stabilizing_Policy">code</a>
+            <a class="btn-custom btn-dark" href="bibtex/long2024_dr_clf_policy.txt">bibtex</a>
+          </div>
+        </li> -->
+
+            <li class="publication-item">
+                <div class="publication-media" style="background-image: url(assets/images/Robust_cbf_2.PNG);"></div>
+                <div class="publication-text">
+                    <span class="publication-title"><a href="https://arxiv.org/abs/2202.09557">Safe Control Synthesis
+                            With Uncertain Dynamics and Constraints</a></span><br />
+                    <span><strong>Kehan Long</strong>, Vikas Dhiman, Melvin Leok, Jorge Cortés, Nikolay
+                        Atanasov</span><br />
+                    <span class="p-conference">IEEE Robotics and Automation Letters (<a
+                            href="https://www.ieee-ras.org/publications/ra-l">RA-L</a>), 2022</span><br />
+                    <a class="btn-custom btn-red" href="https://arxiv.org/abs/2202.09557">arXiv</a>
+                    <a class="btn-custom btn-dark" href="bibtex/long2022ral.txt">bibtex</a>
+                </div>
+            </li>
+
+            <li class="publication-item">
+                <div class="publication-media" style="background-image: url(assets/images/Robust_cbf_1.PNG);"></div>
+                <div class="publication-text">
+                    <span class="publication-title"><a href="https://arxiv.org/abs/2011.01899">Learning Barrier
+                            Functions With Memory for Robust Safe Navigation</a></span><br />
+                    <span><strong>Kehan Long</strong>, Cheng Qian, Jorge Cortés, Nikolay Atanasov</span><br />
+                    <span class="p-conference">IEEE Robotics and Automation Letters (<a
+                            href="https://www.ieee-ras.org/publications/ra-l">RA-L</a>), 2021</span><br />
+                    <a class="btn-custom btn-red" href="https://arxiv.org/abs/2011.01899">arXiv</a>
+                    <a class="btn-custom btn-dark" href="bibtex/long2021ral.txt">bibtex</a>
+                </div>
+            </li>
+        </ul>
+
+        <h3 class="mb-3 mt-5">Contact</h3>
+        <p style="text-align:center;">You are very welcome to contact me regarding my research and collaboration. I can
+            be contacted directly at kehan.lkh@gmail.com</p>
+
+    </main>
+
+    <script>
+        let news = document.getElementById('news').getElementsByTagName('li');
+        let loadMoreButton = document.getElementById('loadMore');
+        let currentNewsIndex = 4;
+
+        for (let i = 0; i < news.length; i++) {
+            if (i >= currentNewsIndex) {
+                news[i].style.display = 'none';
+            }
+        }
+
+        loadMoreButton.addEventListener('click', () => {
+            let endNewsIndex = currentNewsIndex + 4;
+            for (let i = currentNewsIndex; i < endNewsIndex; i++) {
+                if (news[i]) {
+                    news[i].style.display = 'block';
+                }
+            }
+
+            currentNewsIndex = endNewsIndex;
+
+            if (currentNewsIndex >= news.length) {
+                loadMoreButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
