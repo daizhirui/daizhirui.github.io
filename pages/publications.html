@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords"
-        content="robotics, machine learning, reinforcement learning, artificial intelligence, computer vision, information gathering, active information acquisition, planning and control for mobile sensors, sensor management, active slam, simultaneous localization and mapping, value iteration, policy iteration, active perception, object recognition, active object classification and pose estimation, active semantic localization, mobile robot localization, particle filter, KITTI dataset, unmanned aerial vehicles" />
+        content="robotics, 3D scene representation, signed distance function, SDF, octree, neural implicit representation, real-time mapping, SLAM, multi-modal mapping, open-vocabulary semantic mapping, vision-language navigation, motion planning, mobile manipulation, embodied AI, CUDA" />
     <title>Zhirui Dai</title>
     <!-- <link rel="icon" href="/img/ucsd.png" type="image/x-icon" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -117,7 +117,7 @@
                             <strong>OREN-X: Octree Residual Network for Real-Time Multi-Modal Mapping</strong><br />
                             <strong>Z. Dai</strong>, Q. Qian, D. M. Nguyen, Q.-D. Pham, K. Bronder, C. Nieto-Granda,
                             Y. Chen, Q. Nguyen and N. Atanasov<br />
-                            <em><u>Under Review</u></em>, 2026.<br />
+                            <em>IEEE International Conference on Robotics and Automation (ICRA), <u>Under Review</u></em>, 2026.<br />
                             [<a href="javascript:toggleBibtex('Dai_ORENX_2026')">bib</a>]
                             [<a href="/assets/pdfs/ref/ORENX_2026.pdf">pdf</a>]
                             [<a href="https://arxiv.org/abs/2609.29157">arXiv</a>]
@@ -130,6 +130,26 @@
         title = {{OREN-X: Octree Residual Network for Real-Time Multi-Modal Mapping}},
         year = {2026},
         url = {https://arxiv.org/abs/2609.29157}
+    }
+    </pre>
+                        </div>
+
+                        <li>
+                            <strong>AdaGeoVLN: Selective Geometry Across Representation Depth and Navigation Time for
+                                Vision-Language Navigation</strong><br />
+                            Q.-D. Pham, A. Dao, D. V. Le, N. V. T. Pham, T. A. Nguyen, <strong>Z. Dai</strong>, Y. Chen,
+                            T. P. Le, V.-T. Nguyen and Q. Nguyen<br />
+                            <em>IEEE International Conference on Robotics and Automation (ICRA), <u>Under Review</u></em>, 2026.<br />
+                            [<a href="javascript:toggleBibtex('Pham_AdaGeoVLN_2026')">bib</a>]
+                            [<a href="https://arxiv.org/abs/2609.18789">arXiv</a>]
+                        </li>
+                        <div id="bib_Pham_AdaGeoVLN_2026" class="bibtex noshow">
+                            <pre>
+    @misc{Pham_AdaGeoVLN_2026,
+        author = {Quan-Dung Pham and Anh Dao and Danh Vinh Le and Nguyen Viet Tri Pham and The Anh Nguyen and Zhirui Dai and Yiyu Chen and Tuyen Pham Le and Van-Truong Nguyen and Quan Nguyen},
+        title = {{AdaGeoVLN: Selective Geometry Across Representation Depth and Navigation Time for Vision-Language Navigation}},
+        year = {2026},
+        url = {https://arxiv.org/abs/2609.18789}
     }
     </pre>
                         </div>
@@ -186,7 +206,8 @@
 
                         <li>
                             <strong>Kernel-SDF: An Open-Source Library for Real-Time Signed Distance Function Estimation using Kernel Regression</strong><br />
-                            <strong>Z. Dai</strong>, T. Fan, M. Amani, J. Seo, K. M. B. Lee, H. Oh and N. Atanasov<br />
+                            <strong>Z. Dai</strong><sup>*</sup>, T. Fan<sup>*</sup>, M. Amani, J. Seo, K. M. B. Lee, H. Oh and N. Atanasov<br />
+                            <span class="text-sm text-slate-500"><sup>*</sup>Equal contribution</span><br />
                             <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2026.<br />
                             [<a href="javascript:toggleBibtex('Dai_KernelSDF_RAL26')">bib</a>]
                             [<a href="/assets/pdfs/ref/KernelSDF_RAL26.pdf">pdf</a>]
@@ -198,7 +219,7 @@
                         <div id="bib_Dai_KernelSDF_RAL26" class="bibtex noshow">
                             <pre>
     @article{Dai_KernelSDF_RAL26,
-        author = {Zhirui Dai and Tianxing Fan and Mani Amani and Jaemin Seo and Kyungmin B. Lee and Hyondong Oh and Nikolay Atanasov},
+        author = {Zhirui Dai and Tianxing Fan and Mani Amani and Jaemin Seo and Ki Myung Brian Lee and Hyondong Oh and Nikolay Atanasov},
         title = {{Kernel-SDF: An Open-Source Library for Real-Time Signed Distance Function Estimation using Kernel Regression}},
         journal = {IEEE Robotics and Automation Letters (RA-L)},
         year = {2026},
@@ -287,11 +308,12 @@
                         </li>
                         <div id="bib_Dai_SDDF_TPAMI26" class="bibtex noshow">
                             <pre>
-                            @misc{Dai_SDDF_TPAMI26,
+                            @article{Dai_SDDF_TPAMI26,
                                 author = {Zhirui Dai and Hojoon Shin and Yulun Tian and Ki Myung Brian Lee and Nikolay Atanasov},
                                 title = {{Learning Scene-Level Signed Directional Distance Function with Ellipsoidal Priors and Neural Residuals}},
+                                journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)},
                                 year = {2026},
-                                url = {https://arxiv.org/abs/2503.20066}
+                                url = {https://arxiv.org/abs/2503.20066},
                                 doi = {https://doi.org/10.1109/tpami.2026.3688658}
                             }
                             </pre>
@@ -300,7 +322,7 @@
                         <li>
                             <strong>Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy
                                 Learning</strong><br />
-                            S. Kim, W. Chung, Y. Tian, <strong>Z. Dai</strong>, A. Shukla, H. Su and N. Atanasov<br />
+                            S. Kim, W. Chung, <strong>Z. Dai</strong>, D. Bhatt, A. Shukla, H. Su, Y. Tian and N. Atanasov<br />
                             <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2026.<br />
                             [<a href="javascript:toggleBibtex('Kim_BiggerPicture_ICRA26')">bib</a>]
                             [<a href="/assets/pdfs/ref/BiggerPicture_ICRA26.pdf">pdf</a>]
@@ -310,7 +332,7 @@
                         <div id="bib_Kim_BiggerPicture_ICRA26" class="bibtex noshow">
                             <pre>
     @inproceedings{Kim_BiggerPicture_ICRA26,
-        author = {Sunghwan Kim and Woojeh Chung and Yulun Tian and Zhirui Dai and Arth Shukla and Hao Su and Nikolay Atanasov},
+        author = {Sunghwan Kim and Woojeh Chung and Zhirui Dai and Dwait Bhatt and Arth Shukla and Hao Su and Yulun Tian and Nikolay Atanasov},
         title = {{Seeing the Bigger Picture: 3D Latent Mapping for Mobile Manipulation Policy Learning}},
         booktitle = {IEEE International Conference on Robotics and Automation (ICRA)},
         year = {2026},
@@ -440,7 +462,7 @@
                         </div>
 
                         <li>
-                            <strong>BEV-Net: Accessing Social Distancing Compliance By Joint People Localization and
+                            <strong>BEV-Net: Assessing Social Distancing Compliance By Joint People Localization and
                                 Geometric Reasoning</strong><br />
                             <strong>Z. Dai</strong>, Y. Jiang, Y. Li, B. Liu, A. B. Chan, N. Vasconcelos<br />
                             <em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2021.<br />
